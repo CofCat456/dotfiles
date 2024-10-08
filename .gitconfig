@@ -1,0 +1,27 @@
+# ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = code --wait
+	ignorecase = false
+[push]
+  default = simple
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+  ui = auto
+  
+[user]
+  name = cofcat456
+  email = a25690756@gmail.com
+
+[github]
+	user = cofcat456
+  
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
