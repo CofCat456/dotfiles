@@ -22,14 +22,33 @@
     "command": "workbench.action.openRecent"
   },
   {
-    "args": "<C-d>",
-    "command": "vscode-neovim.send",
-    "key": "cmd+d",
-    "when": "editorFocus && neovim.init"
+    "command": "explorer.newFile",
+    "key": "a",
+    "when": "filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "shift+cmd+e",
-    "command": "-aichat.fixerrormessage",
-    "when": "(arbitrary function)"
+		"key": "shift+a",
+		"command": "explorer.newFolder",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.copy",
+    "key": "c",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.paste",
+    "key": "p",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
   }
 ]
